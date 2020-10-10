@@ -580,6 +580,10 @@ impl CANFrame {
            })
     }
 
+    pub fn force_extended(&mut self) {
+       self._id |= EFF_FLAG;
+    }
+
     /// Return the actual CAN ID (without EFF/RTR/ERR flags)
     #[inline(always)]
     pub fn id(&self) -> u32 {
