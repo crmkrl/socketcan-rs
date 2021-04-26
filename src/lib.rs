@@ -530,22 +530,22 @@ impl Drop for CanSocket {
 #[repr(C)]
 pub struct CanFrame {
     /// 32 bit CAN_ID + EFF/RTR/ERR flags
-    _id: u32,
+    pub _id: u32,
 
     /// data length. Bytes beyond are not valid
-    _data_len: u8,
+    pub _data_len: u8,
 
     /// padding
-    _pad: u8,
+    pub _pad: u8,
 
     /// reserved
-    _res0: u8,
+    pub _res0: u8,
 
     /// reserved
-    _res1: u8,
+    pub _res1: u8,
 
     /// buffer for data
-    _data: [u8; 8],
+    pub _data: [u8; 8],
 }
 
 impl CanFrame {
