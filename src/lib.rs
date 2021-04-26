@@ -594,6 +594,11 @@ impl CANFrame {
         }
     }
 
+    //Return the data
+    pub fn get_data(&self) -> [u8; 8] {
+        self._data
+    }
+
     /// Return the error message
     #[inline(always)]
     pub fn err(&self) -> u32 {
