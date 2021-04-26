@@ -4,7 +4,7 @@ description = "Linux SocketCAN library. Send and receive CAN frames via CAN bus 
 documentation = "https://docs.rs/socketcan"
 license = "MIT"
 name = "socketcan"
-repository = "https://github.com/mbr/socketcan-rs"
+repository = "https://github.com/crmkrl/socketcan-rs.git"
 version = "1.7.0"
 edition = "2018"
 
